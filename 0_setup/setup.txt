@@ -1,0 +1,39 @@
+https://github.com/rogerclarkmelbourne/Arduino_STM32/wiki
+
+
+
+
+
+
+
+1. download IDE: ARDUINO 1.8.5
+
+https://www.arduino.cc/en/Main/Software
+
+2. install the software
+
+3. download library
+
+https://github.com/rogerclarkmelbourne/Arduino_STM32
+
+click "Clone or download" 
+
+4. unzip pack to arduino1.8.5 program path like:
+	
+	C:\Program Files (x86)\Arduino\hardware
+	
+	install usb_to_serial driver, locate at /driver/win/ and run install_drivers.bat
+	like:
+	C:\Program Files (x86)\Arduino\hardware\Arduino_STM32\drivers\win\install_drivers.bat
+	
+
+5. open the software, select menu -> Tools -> Board Manager, search Arduino Due( Arduino SAM Board), and install it.
+
+6. Config board from "Tools":
+	Board: "Generic STM32F103C series"
+	Variant "STM32F103C8(20k Ram, 64k Flash)"
+	Cpu Speed(MHZ): "72Mhz(Normal)"
+	Upolad method: "Stm32duino bootloader"
+	Optimize: ...
+
+Ctrl+R to compile code, Ctrl+U to upload binary onto board.
